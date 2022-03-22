@@ -2,7 +2,7 @@
 Web application where students can filter for mentors using mock data. This is a team project that was made using an Agile process where we work using a Trello board within sprints.
 
 ## Contributing
-NOTE: For brevity sake, I described a process we can use to work with Git effectively but you are more than welcome to suggest changes (please suggest in Teams). Usually, people would have a develop branch but for this project scale but I think it would make pull requests too slow.
+NOTE: For brevity sake, I described a process we can use to work with Git effectively but you are more than welcome to suggest changes (please suggest in Teams). Usually, people would have a develop branch but for this project scale I think it would make pull requests too slow.
 
 Only people within the team project must contribute to this (unless this is expanded upon in the future). We can use a GitFlow process to categorise branches into features, refactoring, testing, bugfix etc.
 
