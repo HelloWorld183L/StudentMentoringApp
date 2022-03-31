@@ -7,6 +7,8 @@ By default, Windows disables running scripts so we will need to get around this.
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+**Note**: This may not be a good command to run on university computers (might not work anyway and maybe the admins won't be happy). Use this on personal computers.`
+
 To activate the environment, use the command ".\mentoring-env\bin\activate".
 
 ### MacOS/Linux
