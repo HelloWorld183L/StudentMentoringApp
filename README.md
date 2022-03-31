@@ -2,7 +2,18 @@
 Web application where students can filter for mentors using mock data. This is a team project that was made using an Agile process where we work using a Trello board within sprints.
 
 ## Environments
-To activate the environment, use the command "source mentoring-env/bin/activate" to activate the environment. Once you have done this, you will want to install the dependencies using the below command:
+### Windows
+By default, Windows disables running scripts so we will need to get around this. Execute the below Powershell command to enable running scripts (this will not work otherwise).
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+To activate the environment, use the command ".\mentoring-env\bin\activate".
+
+### MacOS/Linux
+To activate the environment, use the command "source mentoring-env/bin/activate" to activate the environment. 
+
+### Dependencies
+Once you have activated your environment, you will want to install the dependencies using the below command:
 
 pip install -r requirements.txt
 
