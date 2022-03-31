@@ -1,6 +1,17 @@
 # Student Mentoring App
 Web application where students can filter for mentors using mock data. This is a team project that was made using an Agile process where we work using a Trello board within sprints.
 
+## Environments
+To activate the environment, use the command "source mentoring-env/bin/activate" to activate the environment. Once you have done this, you will want to install the dependencies using the below command:
+
+pip install -r requirements.txt
+
+This will install all of the dependencies you will need for this project. If you want to update the dependencies, you can use the below command:
+
+pip freeze > requirements.txt
+
+Please use the above command when you have installed dependencies on your local machine and you want other people to use these dependencies. Commit and push when you have updated this file.
+
 ## Contributing
 NOTE: For brevity sake, I described a process we can use to work with Git effectively but you are more than welcome to suggest changes (please suggest in Teams). Usually, people would have a develop branch but for this project scale I think it would make pull requests too slow.
 
