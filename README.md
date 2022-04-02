@@ -5,11 +5,12 @@ Web application where students can filter for mentors using mock data. This is a
 ### Windows
 By default, Windows disables running scripts so we will need to get around this. Execute the below Powershell command to enable running scripts (this will not work otherwise).
 
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+### `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
-**Note**: This may not be a good command to run on university computers (might not work anyway and maybe the admins won't be happy). Use this on personal computers.`
+**Note**: This may not be a good command to run on university computers (might not work anyway and maybe the admins won't be happy). Use this on personal computers.
 
-To activate the environment, use the command ".\mentoring-env\bin\activate".
+To activate the environment, use the command: 
+### `.\mentoring-env\bin\activate`
 
 ### MacOS/Linux
 To activate the environment, use the command "source mentoring-env/bin/activate" to activate the environment. 
@@ -17,11 +18,11 @@ To activate the environment, use the command "source mentoring-env/bin/activate"
 ### Dependencies
 Once you have activated your environment, you will want to install the dependencies using the below command:
 
-pip install -r requirements.txt
+### `pip install -r requirements.txt`
 
 This will install all of the dependencies you will need for this project. If you want to update the dependencies, you can use the below command:
 
-pip freeze > requirements.txt
+### `pip freeze > requirements.txt`
 
 Please use the above command when you have installed dependencies on your local machine and you want other people to use these dependencies. Commit and push when you have updated this file.
 
@@ -32,11 +33,11 @@ Only people within the team project must contribute to this (unless this is expa
 
 For example, if you are creating a guidelines web page, you may name a branch like this:
 
-feature/guidelines-page
+### `feature/guidelines-page`
 
 Or if you feel that the guidelines web page needs an overhaul (e.g. guidelines need changing), you can do something like this:
 
-refactoring/guidelines-page
+### `refactoring/guidelines-page`
 
 We use "feature" to indicate that a branch is there to implement a feature or "testing" to indicate that we are writing unit tests and vice versa. For this project, we will be doing any sprint work based off a "release" branch (e.g. release/sprint-2) which must be merged into a "main" branch. The reason we have release branches is so that we can keep track of where the product is up to for each release (we can omit this if it proves to be overcomplicated).
 
