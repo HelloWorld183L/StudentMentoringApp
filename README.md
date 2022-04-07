@@ -2,6 +2,8 @@
 Web application where students can filter for mentors using mock data. This is a team project that was made using an Agile process where we work using a Trello board within sprints.
 
 ## Environments
+Prerequisites: Pip, Python
+
 ### Windows
 By default, Windows disables running scripts so we will need to get around this. Execute the below Powershell command to enable running scripts (this will not work otherwise).
 
@@ -9,11 +11,28 @@ By default, Windows disables running scripts so we will need to get around this.
 
 **Note**: This may not be a good command to run on university computers (might not work anyway and maybe the admins won't be happy). Use this on personal computers.
 
+Make sure to install venv beforehand via:
+
+### `pip install venv`
+
+Once you have installed venv, you must create a new environment via:
+
+### `python3 -m venv mentoring-env`
+
+**NOTE**: The above name is used so that the .gitignore file *does not* submit an environment folder. Do not submit any files related to environments to GitHub.
+
 To activate the environment, use the command: 
 ### `.\mentoring-env\bin\activate`
 
 ### MacOS/Linux
-To activate the environment, use the command "source mentoring-env/bin/activate" to activate the environment. 
+Make sure to install venv beforehand via:
+### `pip install venv`
+
+From there, create a new environment via:
+### `python3 -m venv mentoring-env`
+
+Use the following command to activate the environment:
+### `source mentoring-env/bin/activate`
 
 ### Dependencies
 Once you have activated your environment, you will want to install the dependencies using the below command:
