@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg"> <!-- Nav bar at top -->
                 <a class="navbar-brand">Student Mentoring Application</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,29 +22,33 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Guidelines</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Submition Form</a>
-                        </li>
-                    </ul>
+                          </li>
+                          <li class="nav-item active">
+                              <a href="#" class="nav-link">Submition Form</a>
+                          </li>
+                      </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="submitionAbout">
-            <h1> Submition Form</h1>
-            <h2> How to use: </h2>
-            <p>Please enter your details below to sumbit an application to become a mentee
-            </p>
-          
-    </div>
-        <form>
-            <div class="inputs">
-              <label for="InputFullName">Full Name:</label>
+        <div class="container-fluid"> <!-- Div that spaces from side -->
+            <h1>Submition Form</h1>
+            <h2>How to use:</h2>
+            <p>Please enter your details below to sumbit an application to become a mentee. </p>
+            <p>Keep in mind youcannot sumbit a help form if the work you are requesting help with directly relates to any assesed
+              peice of work as this will be taken as collusion and the issue will be dealt with by the university,
+              if you are unsure about any of the rules please refer to the <a href="">Guidelines</a> page. <!-- Change the link to actual guidelines page if needed--> 
+            </p>         
+        
+          <form>
+            <div class="inputs"> <!-- Full name textbox -->
+              <label for="InputFullName">Full Name :</label>
               <input type="Fullname" class="inputs" id="InputFullName" aria-describedby="nameHelp" placeholder="Enter full name">
             </div>
+            <p>
 
-             <div class="inputs">
+            </p>
+              <div class="inputs"> <!-- Course selector -->
                 <label for="InputCourse">Course :</label>
                 <select class="inputs" id="InputCourse">
                   <option>AI and Data Science</option>
@@ -52,8 +56,10 @@
                   <option>Example3</option>
                 </select>
               </div>
-
-              <div class="inputs">
+                <p>
+              
+                </p>
+              <div class="inputs"> <!-- Year selector -->
                 <label for="InputYear">Year :</label>
                 <select class="inputs" id="InputYear">
                   <option>1</option>
@@ -61,24 +67,28 @@
                   <option>3</option>
                 </select>
               </div>
-
-              <p> Are you an international student: </p>
-              <div class="inputs">
+                <p>
+              
+                </p>
+                 <p>Are you an international student:</p>
+                 
+               <div class="inputs"> <!-- International student radio box -->
                 <input class="inputs-international" type="radio" name="internationalRadios" id="internationalsRadios1" value="option1" checked>
                 <label class="inputs-international-label" for="internationalsRadios1">
                   No
                 </label>
-              </div>
-              <div class="inputs">
+               </div>
+             
+               <div class="inputs">
                 <input class="inputs-international" type="radio" name="internationalRadios" id="internationalsRadios2" value="option2">
                 <label class="inputs-international-label" for="internationalsRadios2">
                   Yes
                 </label>
-              </div>
-            
+               </div>
+              
         
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button> <!-- Submit button -->
+          </div> <!-- Ending of class "Container Fluid" -->
         </form>
-
     </body>
 </html>
