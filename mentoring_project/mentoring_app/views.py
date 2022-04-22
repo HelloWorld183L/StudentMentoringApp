@@ -22,10 +22,9 @@ class SubmissionFormView(TemplateView):
 
     def post(self, request):
         form = SubmissionForm(request.POST)
-
         return render(request, self.template_name)
 
-class MentorList(TemplateView):
+class MentorListView(TemplateView):
     template_path='templates/mentor_list.html'
 
     def get(self, request):
