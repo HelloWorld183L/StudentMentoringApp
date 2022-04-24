@@ -1,0 +1,29 @@
+{% extends "templates/base.html") % }
+
+{% block content %}
+    <h1>Mentors</h1>
+    <div class="row">
+    {% if mentor_list %}
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for mentor in mentor_list %}
+                    <tr>
+                        <td>{{ mentor.name }}</td>
+                        <td>{{ mentor.email }}</td>
+                        <td>{{ mentor.course }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p> There are no books </p>
+    {% endif %}
+    </div>
+{% endblock %}
