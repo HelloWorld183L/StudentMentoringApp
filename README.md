@@ -45,6 +45,19 @@ This will install all of the dependencies you will need for this project. If you
 
 Please use the above command when you have installed dependencies on your local machine and you want other people to use these dependencies. Commit and push when you have updated this file.
 
+## Django commands
+To run the django server, type the following command:
+
+### `python manage.py runserver`
+Make sure that the manage.py file is available and that you are in the environment (otherwise you will get an error about Django not being detected).
+
+When making changes to the models, the database will need to be updated in order for us to use mock data. To make a migration, run the following command:
+### `python manage.py makemigration`
+
+If you want to run migrations, you would run the following command:
+### `python manage.py migrate`
+For more details on migrations, visit this documentation page: https://docs.djangoproject.com/en/4.0/topics/migrations/
+
 ## Contributing
 NOTE: For brevity sake, I described a process we can use to work with Git effectively but you are more than welcome to suggest changes (please suggest in Teams). Usually, people would have a develop branch but for this project scale I think it would make pull requests too slow.
 
