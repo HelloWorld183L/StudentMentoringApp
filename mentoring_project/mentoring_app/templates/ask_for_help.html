@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="submitionAbout">
+    <h1> Submission Form</h1>
+    <h2> How to use: </h2>
+    <p>Please enter your details below to sumbit an application to become a mentee
+    </p>
+  </div>
+  <form>
+    <div class="inputs">
+      <label for="InputFullName">Full Name:</label>
+      <input type="Fullname" class="inputs" id="InputFullName" aria-describedby="nameHelp" placeholder="Enter full name">
+    </div>
+
+    <div class="inputs">
+        <label for="InputCourse">Course :</label>
+        <select class="inputs" id="InputCourse">
+          <option>AI and Data Science</option>
+          <option>Software Engineering</option>
+          <option>Example3</option>
+        </select>
+      </div>
+
+      <div class="inputs">
+        <label for="InputYear">Year :</label>
+        <select class="inputs" id="InputYear">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+
+      <p> Are you an international student: </p>
+      <div class="inputs">
+        <input class="inputs-international" type="radio" name="internationalRadios" id="internationalsRadios1" value="option1" checked>
+        <label class="inputs-international-label" for="internationalsRadios1">
+          No
+        </label>
+      </div>
+      <div class="inputs">
+        <input class="inputs-international" type="radio" name="internationalRadios" id="internationalsRadios2" value="option2">
+        <label class="inputs-international-label" for="internationalsRadios2">
+          Yes
+        </label>
+      </div>
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
