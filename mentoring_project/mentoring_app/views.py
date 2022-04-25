@@ -18,7 +18,10 @@ class SubmissionFormView(TemplateView):
         return render(request, self.template_path)
 
 class MentorListView(FilterView):
-    template_name="mentors.html"
     paginate_by=10
     filterset_class = MentorFilter
     queryset = Mentor.objects.all()
+
+    def get(self, request):
+        f = MentorFilter(request.GET, queryset=Mentor.objects.all())
+        return render(request, 'mentors.html', {'filter': f})

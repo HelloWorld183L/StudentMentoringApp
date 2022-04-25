@@ -14,7 +14,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for mentor in mentor_list %}
+                {% for mentor in filter.qs %}
                     <tr>
                         <td>{{ mentor.name }}</td>
                         <td>{{ mentor.email }}</td>
