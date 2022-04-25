@@ -3,29 +3,29 @@
 {% block content %}
     <h1>Mentors</h1>
     <div class="row">
-    {% if mentor_list %}
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Course</th>
-                    <th>Current Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for mentor in filter.qs %}
+        {% if filter.qs %}
+            <table class="table">
+                <thead class="thead-dark">
                     <tr>
-                        <td>{{ mentor.name }}</td>
-                        <td>{{ mentor.email }}</td>
-                        <td>{{ mentor.course }}</td>
-                        <td>{{ mentor.current_year }}</td>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Current Year</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <p> There are no mentors </p>
-    {% endif %}
+                </thead>
+                <tbody>
+                    {% for mentor in filter.qs %}
+                        <tr>
+                            <td>{{ mentor.name }}</td>
+                            <td>{{ mentor.email }}</td>
+                            <td>{{ mentor.course }}</td>
+                            <td>{{ mentor.current_year }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p> There are no mentors </p>
+        {% endif %}
     </div>
 {% endblock %}
